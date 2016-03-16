@@ -1,0 +1,19 @@
+
+.footer{
+    -fx-background-color: 
+        linear-gradient(#000000 0%, #080808 25%, #101010 75%, #181818 100%),
+        linear-gradient(#020b02, #3a3a3a);
+    -fx-background-insets: 0,2;
+    -fx-effect: innershadow(three-pass-box, black, 12 , 0.5, 1, 1);
+    -fx-insets : 12 12 12 12;
+}
+
+.position{
+    -fx-text-fill: white;
+    -fx-font-size: 10px;
+    -fx-alignment: CENTER_RIGHT;
+}
+
+.slider .thumb {
+    -fx-cursor: hand;
+}

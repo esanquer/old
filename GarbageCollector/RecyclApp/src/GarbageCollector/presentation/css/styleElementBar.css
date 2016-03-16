@@ -1,0 +1,55 @@
+
+    /*################################
+                ElementBar
+    ##################################*/   
+    
+.elementsBar{
+    /*-fx-background-color: linear-gradient(to bottom, #181818, #303030);*/
+    -fx-background-color: 
+        linear-gradient(#000000 0%, #080808 25%, #101010 75%, #181818 100%),
+        linear-gradient(#020b02, #3a3a3a);
+    -fx-background-insets: 0,2;
+    -fx-effect: innershadow(three-pass-box, black, 12 , 0.5, 1, 1);
+}
+
+    /*################################
+          Titre de la bar d'element
+    ##################################*/         
+   
+.element {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-cursor: hand;
+}
+ 
+.element:hover {
+    -fx-background-color:
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a);
+    -fx-background-insets: 0,1;
+}
+
+
+.element-active{
+   -fx-cursor: hand;
+   -fx-background-color:
+        linear-gradient(#080808 0%, #101010 25%, #181818 75%, #202020 100%),
+        linear-gradient(#686868, #373837);
+    -fx-background-insets: 0,2;
+}
+
+.element-active{
+   -fx-cursor: hand;
+   -fx-background-color:
+        linear-gradient(#080808 0%, #101010 25%, #181818 75%, #202020 100%),
+        linear-gradient(#686868, #373837);
+    -fx-background-insets: 0,2;
+}
+
+.element-active:hover{
+   -fx-background-color:
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a);
+    -fx-background-insets: 0,1;
+    -fx-text-fill: red;
+}

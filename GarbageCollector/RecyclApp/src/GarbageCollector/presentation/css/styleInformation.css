@@ -1,0 +1,136 @@
+
+    /*################################
+            Information Bar
+    ##################################*/   
+    
+.stationInformation{
+    -fx-background-color: 
+        linear-gradient(#000000 0%, #080808 25%, #101010 75%, #181818 100%),
+        linear-gradient(#020b02, #3a3a3a);
+}
+
+    /*################################
+          Titre de la bar d'info
+    ##################################*/         
+
+.tileInformation{
+    -fx-text-fill: white;
+    -fx-font-size: 30px; 
+    -fx-translate-x : 10;
+
+}
+
+.tileBox{
+    -fx-effect: innershadow(three-pass-box, black, 12 , 0.5, 1, 1);
+    -fx-background-color: linear-gradient(to bottom, rgb(50, 50, 50), derive(rgb(50, 50, 50),30%));
+    -fx-insets : 12 12 12 12;
+}
+
+.infoBar{
+    -fx-background-color: 
+        linear-gradient(#000000 0%, #080808 25%, #101010 75%, #181818 100%),
+        linear-gradient(#020b02, #3a3a3a);
+    -fx-background-insets: 0,2;
+    -fx-effect: innershadow(three-pass-box, black, 12 , 0.5, 1, 1);
+    -fx-insets : 12 12 12 12;
+}
+
+    /*################################
+            Contenu
+    ##################################*/         
+    
+.descriptionInformation{
+    -fx-text-fill: white;
+    -fx-font-size: 15px; 
+    -fx-alignment : center;
+    -fx-text-alignment : center;
+    -fx-translate-x : 10;
+    -fx-background-color: transparent;
+}
+
+.fieldInformation{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-text-alignment : center;
+    -fx-translate-x : 10;
+}
+
+.descriptionInformationSetting{
+    -fx-text-fill: white;
+    -fx-alignment : center;
+    -fx-text-alignment : center;
+    -fx-translate-x : 10;
+}
+
+.labelInformationSetting{
+    -fx-text-fill: white;
+    -fx-text-alignment : center;
+}
+
+.labelInformation{
+    -fx-translate-x : 10;
+}
+
+.unitInformation{
+    -fx-translate-x : 15;
+}
+
+.colorInformation{
+    -fx-translate-x : 20;
+    -fx-translate-y : 1;
+     -fx-text-fill: transparent;
+    -fx-color-label-visible : false;
+    -fx-background-color: transparent;
+    
+}
+
+.colorInformationSetting{
+    -fx-cursor : hand;
+    -fx-translate-x : 9;
+    -fx-text-alignment : left; 
+}
+
+.error-label{
+     -fx-text-fill: red;
+}
+
+    /*################################
+                Matrice
+    ##################################*/ 
+ 
+.matrice{
+   -fx-background-color:
+        linear-gradient(#353535 0%, #232723 25%, #373837 75%, #202020 100%),
+        linear-gradient(#020b02, #3a3a3a);
+    -fx-background-insets: 0,1;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+}
+
+.scroolMatrice{
+    -fx-translate-x : 5;
+}
+
+.labelMatrice{
+    -fx-text-fill: white;
+    -fx-alignment : center;
+    -fx-text-alignment : center;  
+}
+
+.labelMatriceSetting{
+    -fx-text-fill: white;
+    -fx-alignment : center;
+    -fx-text-alignment : center;  
+    -fx-background-color:
+        linear-gradient(#353535 0%, #232723 25%, #373837 75%, #202020 100%),
+        linear-gradient(#585858, #808080);
+    -fx-background-insets: 0,2;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-highlight-fill : #9d9e9d;
+}
+
+.headMatrice{
+    -fx-text-alignment : left;
+}
+

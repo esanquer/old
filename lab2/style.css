@@ -1,0 +1,60 @@
+body{
+	margin:0;
+	padding:0;
+	width: 100%;
+	height: 100%;
+}
+
+.carousel{
+	width:100%;
+	height:100%;
+	display: inline-block;
+	margin-top: 10px;
+}
+.carousel #image{
+	position: fixed;
+	width: 500px;
+	margin-left: 30%;
+	height: 500px;
+}
+
+.buttonleftcarousel{
+	display: inline-block;
+	margin-left: 20%;
+	height:100%;
+	float:left;
+	width:20%;
+}
+.buttonleftcarousel img{
+	margin-top:150px;
+}
+
+.buttonrightcarousel{
+	display: inline-block;
+	height:100%;
+	width:20%;
+	float:right;
+	margin-right:20%;
+}
+
+.buttonrightcarousel img{
+	margin-top:150px;
+}
+
+.selectorcarousel{
+	position:fixed;
+	display: inline-block;
+	top:50%;
+}
+
+.selectorcarousel button{
+	border-radius: 9px;
+}
+
+.selectorcarousel button:hover{
+	background-color:red;
+}
+
+.selectorcarousel button.actif{
+	background-color: green;
+}

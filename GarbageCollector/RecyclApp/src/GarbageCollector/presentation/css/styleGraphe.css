@@ -1,0 +1,124 @@
+
+    /*################################
+            Equipement
+    ##################################*/   
+    
+.equipement{
+    -fx-stroke-width : 2;
+    -fx-cursor : hand;
+    -fx-stroke : black;
+}
+
+.equipement:hover{
+    -fx-stroke-width : 5;
+    -fx-stroke : darkslategrey;
+}
+
+.equipement-active{
+    -fx-stroke-width : 5;
+    -fx-stroke : navy;
+}
+
+.equipement-active:hover{
+    -fx-stroke-width : 7;
+    -fx-stroke : darkblue;
+}
+
+.equipement-error{
+    -fx-stroke-width : 5;
+    -fx-stroke : red;
+}
+
+.equipement-error:hover{
+    -fx-stroke-width : 7;
+    -fx-stroke : darkred;
+}
+
+.imageStation{
+    -fx-background-radius : 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+    -fx-border-color : black;
+    -fx-border-radius : 10;
+    -fx-border-width : 2;
+    -fx-cursor : hand;
+}
+
+.nameEquipement{
+    -fx-background-radius : 10;
+    
+    -fx-border-color : black;
+    -fx-border-radius : 10;
+    -fx-border-width : 2;
+    -fx-cursor : hand;
+    
+    -fx-text-fill: black ;
+    -fx-font-size: 2em;
+    -fx-text-alignment : center;
+    -fx-hpos : center;
+    -fx-vpos : center;
+}
+
+.nameEquipement:hover{
+    -fx-border-color : darkslategrey;
+    -fx-border-width : 5;
+    -fx-cursor : hand;
+}
+
+.nameEquipement-active{
+    -fx-border-width : 5;
+    -fx-border-color : navy;
+}
+
+.nameEquipement-active:hover{
+    -fx-border-width : 7;
+    -fx-border-color : darkblue;
+}
+
+.nameEquipement-error{
+    -fx-border-width : 5;
+    -fx-border-color : red;
+}
+
+.nameEquipement-error:hover{
+    -fx-border-width : 7;
+    -fx-border-color : darkred;
+}
+
+
+   /*################################
+          Convoyeur
+    ##################################*/   
+
+.convoyeur{
+    -fx-stroke-line-cap : round;
+    -fx-stroke-line-join :round;
+    -fx-stroke-type : centered;
+    -fx-smooth : true;
+    -fx-stroke-width : 7;
+    -fx-cursor : hand;
+    -fx-stroke-color : black;
+}
+
+.convoyeur:hover{
+    -fx-stroke-width : 9;
+    -fx-stroke-color : black;
+}
+
+.convoyeur-active{
+    -fx-stroke-width : 9;
+    -fx-stroke-color : black;
+}
+
+.convoyeur-active:hover{
+    -fx-stroke-width : 9;
+    -fx-stroke-color : black;
+}
+
+.convoyeur-error{
+    -fx-stroke-width : 9;
+    -fx-stroke-color : red;
+}
+
+.convoyeur-error:hover{
+    -fx-stroke-color : darkred;
+}

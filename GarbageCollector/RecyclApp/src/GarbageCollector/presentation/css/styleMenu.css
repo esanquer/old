@@ -1,0 +1,19 @@
+
+    
+.tool-bar {
+    -fx-background-color: 
+        linear-gradient(#000000 0%, #080808 25%, #101010 75%, #181818 100%),
+        linear-gradient(#020b02, #3a3a3a);
+    -fx-background-insets: 0,2;
+    -fx-effect: innershadow(three-pass-box, black, 12 , 0.5, 1, 1);
+    -fx-insets : 12 12 12 12;
+}
+
+.titleApp{
+    -fx-text-fill: #12CC25 ;
+}
+
+.logo{
+   -fx-translate-y: 5; 
+}
+

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F98EA07-B3FA-410F-A6F7-E60F85AB7EA5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>rpgengine</RootNamespace>
+    <AssemblyName>rpgengine</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="moteur\GestionUnivers.cs" />
+    <Compile Include="moteur\JeuPartie.cs" />
+    <Compile Include="moteur\Moteur.cs" />
+    <Compile Include="moteur\Constantes.cs" />
+    <Compile Include="moteur\Partie.cs" />
+    <Compile Include="moteur\services\ServiceCaracteristique.cs" />
+    <Compile Include="moteur\services\ServiceCategorie.cs" />
+    <Compile Include="moteur\services\ServiceCompetence.cs" />
+    <Compile Include="moteur\services\ServicePartie.cs" />
+    <Compile Include="moteur\services\Services.cs" />
+    <Compile Include="moteur\services\ServiceSituation.cs" />
+    <Compile Include="moteur\services\ServiceUnivers.cs" />
+    <Compile Include="univers\Arme.cs" />
+    <Compile Include="univers\Caracteristique.cs" />
+    <Compile Include="univers\Categorie.cs" />
+    <Compile Include="univers\Choix.cs" />
+    <Compile Include="univers\Combat.cs" />
+    <Compile Include="univers\Competence.cs" />
+    <Compile Include="univers\Dialogue.cs" />
+    <Compile Include="univers\Epreuve.cs" />
+    <Compile Include="univers\Equipement.cs" />
+    <Compile Include="univers\InstanceCaracteristique.cs" />
+    <Compile Include="univers\Personnage.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="univers\SituationVide.cs" />
+    <Compile Include="vue\CombatSituationWidget.cs" />
+    <Compile Include="vue\DialogueSituationWidget.cs" />
+    <Compile Include="vue\EpreuveSituationWidget.cs" />
+    <Compile Include="vue\PlateauCreatorWidget.cs" />
+    <Compile Include="vue\PlateauWidget.cs" />
+    <Compile Include="univers\Situation.cs" />
+    <Compile Include="univers\Univers.cs" />
+    <Compile Include="univers\Utilitaire.cs" />
+    <Compile Include="vue\ButtonWidget.cs" />
+    <Compile Include="vue\ConsoleKeyListener.cs" />
+    <Compile Include="vue\DelegateMethods.cs" />
+    <Compile Include="vue\FormEntryWidget.cs" />
+    <Compile Include="vue\FormWidget.cs" />
+    <Compile Include="vue\LabelWidget.cs" />
+    <Compile Include="vue\MenuWidget.cs" />
+    <Compile Include="vue\Popup.cs" />
+    <Compile Include="vue\SelectListWidget.cs" />
+    <Compile Include="vue\SituationWidget.cs" />
+    <Compile Include="vue\SliderWidget.cs" />
+    <Compile Include="vue\TextareaWidget.cs" />
+    <Compile Include="vue\TextBoxWidget.cs" />
+    <Compile Include="vue\TextWidget.cs" />
+    <Compile Include="vue\VoidSituationWidget.cs" />
+    <Compile Include="vue\VueConsole.cs" />
+    <Compile Include="vue\Widget.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

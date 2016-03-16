@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="js/calculator.js"></script>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/use_calculator.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title></title>
+</head>
+<body>
+	<table class="calculatrice" id="calc">
+		<tbody><tr>
+			<td colspan="4" class="calc_td_resultat">
+				<input type="text" name="calc_resultat" id="calc_resultat" class="calc_resultat">
+			</td>
+		</tr>
+		<tr>
+			<td class="calc_td_btn">
+				<input id="cos" type="button" class="calc_btn" data-operande="cos" value="cos(" onclick="doOperation('cos');">
+			</td>
+			<td class="calc_td_btn">
+				<input id="sin" type="button" class="calc_btn" data-operande="sin" value="sin(" onclick="doOperation('sin');">
+			</td>
+			<td class="calc_td_btn">
+				<input id="tan" type="button" class="calc_btn" data-operande="tan" value="tan(" onclick="doOperation('tan');">
+			</td>
+			<td class="calc_td_btn">
+				<input id="opPlus" type="button" class="calc_btn" data-operande="add" value="+" onclick="doOperation('opPlus');">
+			</td>
+		</tr>
+		<tr>
+			<td class="calc_td_btn">
+				<input type="button" class="calc_btn" value="7" onclick="putChar(7)">
+			</td>
+			<td class="calc_td_btn">
+				<input type="button" class="calc_btn" value="8" onclick="putChar(8)">
+			</td>
+			<td class="calc_td_btn">
+				<input type="button" class="calc_btn" value="9" onclick="putChar(9)">
+			</td>
+			<td class="calc_td_btn">
+				<input id="opMoins" type="button" class="calc_btn" data-operande="subtract"  value="-" onclick="doOperation('opMoins')">
+			</td>
+		</tr>
+		<tr>
+			<td class="calc_td_btn">
+				<input type="button" class="calc_btn" value="4" onclick="putChar(4)">
+			</td>
+			<td class="calc_td_btn">
+				<input type="button" class="calc_btn" value="5" onclick="putChar(5)">
+			</td>
+			<td class="calc_td_btn">
+				<input type="button" class="calc_btn" value="6" onclick="putChar(6)">
+			</td>
+			<td class="calc_td_btn">
+				<input id="opFois" type="button" data-operande="multiply" class="calc_btn" value="*" onclick="doOperation('opFois')">
+			</td>
+		</tr>
+		<tr>
+			<td class="calc_td_btn">
+				<input type="button" class="calc_btn" value="1" onclick="putChar(1);">
+			</td>
+			<td class="calc_td_btn">
+				<input type="button" class="calc_btn" value="2" onclick="putChar(2);">
+			</td>
+			<td class="calc_td_btn">
+				<input type="button" class="calc_btn" value="3" onclick="putChar(3);">
+			</td>
+			<td class="calc_td_btn">
+				<input id="opDiv" type="button" class="calc_btn" data-operande="divide" value="/" onclick="doOperation('opDiv');">
+			</td>
+		</tr>
+		<tr>
+			<td class="calc_td_btn">
+				<input type="button" class="calc_btn" value="0" onclick="putChar(0);">
+			</td>
+			<td class="calc_td_btn">
+				<input type="button" class="calc_btn" value="GeoLoc" onclick="GeoLoc();">
+			</td>
+			<td class="calc_td_btn">
+				<input id="CE" type="button" class="calc_btn" value="CE" onclick="doOperation('CE');">
+			</td>
+			<td class="calc_td_btn">
+				<input id="opEqu" type="button" class="calc_btn" data-operande="equals" value="=" onclick="doOperation('opEqu');">
+			</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>

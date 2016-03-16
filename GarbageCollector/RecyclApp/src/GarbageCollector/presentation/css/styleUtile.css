@@ -1,0 +1,76 @@
+
+.root {
+    -fx-base: rgb(50, 50, 50);
+    -fx-background: rgb(50, 50, 50);
+    -fx-control-inner-background:  rgb(50, 50, 50);
+}
+
+    /*################################
+                    FONT
+    ##################################*/
+ 
+.font-Black  {-fx-font-family: OpenSans-ExtraBold;-fx-font-weight: bolder}
+.font-Bold   {-fx-font-family: OpenSans-Semibold;-fx-font-weight: bolder }
+.font-Medium {-fx-font-family: OpenSans-Bold;-fx-font-weight: lighter }
+.font-Regular{-fx-font-family: OpenSans-Regular;}
+.font-Light  {-fx-font-family: OpenSans-Light;}
+
+.text-regular{-fx-font-size: 12px;}
+.text-medium{-fx-font-size: 15px;}
+.text-big{-fx-font-size: 30px;}
+
+.cursor-hand{
+    -fx-cursor: hand;
+}
+
+    /*################################
+                Boutton
+    ##################################*/
+    
+.btn  {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-cursor: hand;
+}
+ 
+.btn:hover {
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-color: -fx-hover-base;
+}
+
+.btn:pressed{
+    -fx-background-color:
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a);
+    -fx-background-insets: 0,1;
+    -fx-text-fill: red;
+}
+
+
+
+.btn-disable{
+    -fx-cursor: default;
+    -fx-background-color:
+        linear-gradient(#080808 0%, #101010 25%, #181818 75%, #202020 100%),
+        linear-gradient(#020b02, #3a3a3a);
+    -fx-background-insets: 0,1;
+}
+
+.btn-disable:hover{
+   -fx-cursor: default;
+   -fx-background-color:
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a);
+    -fx-background-insets: 0,1;
+}
+
+
+
+.btn-active{
+   -fx-cursor: hand;
+   -fx-background-color:
+        linear-gradient(#080808 0%, #101010 25%, #181818 75%, #202020 100%),
+        linear-gradient(#686868, #373837);
+    -fx-background-insets: 0,2;
+}
+
